@@ -8,15 +8,15 @@
 
 `mex -O -output lsd lsd_matlab.c lsd.c`
 
-将后面两个c文件整合起来变成一个mexw文件lsd.mexw64
+将后面两个c文件整合起来变成一个mexw文件lsd.mexw64  
 然后就可以像函数一样在matlab中调用lsd
 
 ###函数说明
-%function lines=lsd(im)
-%INPUT
-%	im: double valued gray image
-%OUTPUT
-%	lines<Nx5>: line segments found in im, x1 y1 x2 y2 width
+%function lines=lsd(im)  
+%INPUT  
+%	im: double valued gray image  
+%OUTPUT  
+%	lines<Nx5>: line segments found in im, x1 y1 x2 y2 width  
 ###调用示例
 
     I=imread('test.png');
