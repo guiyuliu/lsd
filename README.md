@@ -7,6 +7,7 @@
 ##编译方法
 
 `mex -O -output lsd lsd_matlab.c lsd.c`
+
 将后面两个c文件整合起来变成一个mexw文件lsd.mexw64
 然后就可以像函数一样在matlab中调用lsd
 
