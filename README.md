@@ -23,7 +23,7 @@
     I=rgb2gray(I);
     lines=lsd(double(I))
 ##编译error:
-无法解析的外部符号 mxErrMsgTxt，该符号在函数 mexFunction 中被引用
+*无法解析的外部符号 mxErrMsgTxt，该符号在函数 mexFunction 中被引用*  
 solution：在新的MATLAB版本中，mxErrMsgTxt函数已经被取消，意义为输出错误信息并终止程序，可修改lsd_Matlab.c如下：
 
     {
